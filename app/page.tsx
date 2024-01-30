@@ -58,6 +58,11 @@ export default function Home() {
 
           <div className="bottom-info w-[100vw]">
             <small>
+              <Link className="home-link" href="/contact">
+                Contact
+              </Link>
+            </small>
+            <small>
               © 2024,{" "}
               <Link className="home-link" href="https://soulassassins.com/">
                 Soul Assassins
