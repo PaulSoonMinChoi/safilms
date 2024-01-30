@@ -88,7 +88,7 @@ export default function Home() {
         <div className="w-[100vw] h-[100vh]">
           <div className="background-image"></div>
 
-          <div className="flex justify-center items-center w-[100vw] pt-6 pb-6">
+          <div className="flex justify-center items-center w-[100vw] pt-6">
             <h1> DEATH VALLEY </h1>
           </div>
 
@@ -141,6 +141,7 @@ export default function Home() {
                   Marciano - Crazy Horse (Original Version) Rome Streetz -
                   Skeleton Bones Jay Worthy - (Check in) (OG Version)
                 </span>
+                
                 {/* <span className="info-text"></span> */}
                 {/* <a
                   className="button"
@@ -159,17 +160,22 @@ export default function Home() {
                     ></iframe>
                   </div>
                 </div>
+                <span className="sub-info-text">
+                  Log into your  <Link className="home-link" target="_blank" href="https://vimeo.com/">
+               Vimeo
+              </Link> account to view the Deluxe Content
+                </span>
               </div>
             </div>
           </div>
-          <div className="bottom-info w-[100vw]">
+          {/* <div className="bottom-info w-[100vw]">
             <small>
               © 2024,{" "}
               <Link className="home-link" href="https://soulassassins.com/">
                 Soul Assassins
               </Link>
             </small>
-          </div>
+          </div> */}
         </div>
       </SwiperSlide>
     </Swiper>
