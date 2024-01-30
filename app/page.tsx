@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <Swiper
       // className="swiper-container"
+      className="w-[100vw] h-[100vh]"
       slidesPerView={1}
       navigation
       mousewheel={true}
