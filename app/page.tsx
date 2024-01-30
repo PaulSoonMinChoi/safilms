@@ -99,25 +99,49 @@ export default function Home() {
           </div>
 
           <div className="content-container flex justify-center items-center w-[100vw]">
-            <div className="content-info flex flex-col justify-center items-center w-[50vw] gap-[50px] p-[100px]">
-              <div className="text-center">
-                <span>To watch the entire Death Valley Video purchase the extended video cut.</span>
+            <div className="content-info flex flex-col justify-center items-center w-[50vw]">
+              <div className="flex justify-center flex-col gap-[10px] text-center">
+                <span className="p-[10px]">
+                  Free preview of Death Valley. Purchase full version on the
+                  right.
+                </span>
+                <div className="flex justify-center items-center">
+                  <div className="vid-container w-[50vw]">
+                    <iframe
+                      className="w-[100%] h-[100%]"
+                      src="https://player.vimeo.com/video/903023455?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      title="DEATH VALLEY"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
-              <a
-                className="button"
-                href="https://vimeo.com/store/ondemand/popup/6617208?referrer=https%3A%2F%2Fvimeo.com%2F&ssl=1"
-                target="_blank"
-              >
-                Purchase
-              </a>
             </div>
-            <div className="vid-container w-[50vw]">
-              <iframe
-                className="w-[100%] h-[100%]"
-                src="https://player.vimeo.com/video/903023455?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="DEATH VALLEY"
-              ></iframe>
+
+            <div className="content-info flex flex-col justify-center items-center w-[50vw]">
+              <div className="flex justify-center flex-col gap-[10px] text-center items-center">
+                <span className="">
+                  To watch the entire Death Valley Video purchase the extended
+                  video cut.
+                </span>
+                <a
+                  className="button"
+                  href="https://vimeo.com/store/ondemand/popup/6617208?referrer=https%3A%2F%2Fvimeo.com%2F&ssl=1"
+                  target="_blank"
+                >
+                  Purchase
+                </a>
+                <div className="flex justify-center items-center">
+                  <div className="vid-container w-[50vw]">
+                    <iframe
+                      className="w-[100%] h-[100%]"
+                      src="https://player.vimeo.com/video/876150152?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      title="DEATH VALLEY"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bottom-info w-[100vw]">
