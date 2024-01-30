@@ -161,7 +161,7 @@ export default function Home() {
                   </div>
                 </div>
                 <span className="sub-info-text">
-                  Log into your  <Link className="home-link" target="_blank" href="https://vimeo.com/">
+                  Log into your  <Link className="home-link" target="_blank" rel="noreferrer" href="https://vimeo.com/">
                Vimeo
               </Link> account to view the Deluxe Content
                 </span>
