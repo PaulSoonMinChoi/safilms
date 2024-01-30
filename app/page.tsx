@@ -65,7 +65,7 @@ export default function Home() {
             </small>
             <small>
               © 2024,{" "}
-              <Link className="home-link" href="https://soulassassins.com/">
+              <Link className="home-link" href="https://soulassassins.com/" style={{textDecoration: 'none !important'}}>
                 Soul Assassins
               </Link>
             </small>

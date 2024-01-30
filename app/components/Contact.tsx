@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="bottom-info w-[100vw]">
         <small>
           © 2024,{" "}
-          <Link className="home-link" href="https://soulassassins.com/">
+          <Link className="home-link" href="https://soulassassins.com/" style={{textDecoration: 'none !important'}}>
             Soul Assassins
           </Link>
         </small>
