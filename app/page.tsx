@@ -87,12 +87,12 @@ export default function Home() {
         <div className="w-[100vw] h-[100vh]">
           <div className="background-image"></div>
 
-          <div className="flex justify-center items-center w-[100vw] pt-6">
+          <div className="flex justify-center items-center w-[100vw] pt-6 pb-6">
             <h1> DEATH VALLEY </h1>
           </div>
 
-          <div className="info-text-container text-center">
-            <span className="info-text">
+          {/* <div className="info-text-container text-center"> */}
+            {/* <span className="info-text">
               A new powder has hit the streets of Oakland by way of India, and
               every gang in the region wants a taste. From acclaimed music
               producer DJ Muggs and Soul Assassins comes Death Valley. Directed
@@ -100,16 +100,13 @@ export default function Home() {
               feature film debut. And sporting an Allstar hip-hop cast with
               appearances by Roc Marciano, Meyhem Lauren, Boldy James, and DJ
               Muggs himself.
-            </span>
-          </div>
+            </span> */}
+          {/* </div> */}
 
           <div className="content-container flex justify-center items-center w-[100vw]">
             <div className="content-info flex flex-col justify-center items-center w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center">
-                <span className="p-[10px]">
-                  Free preview of Death Valley. Purchase full version on the
-                  right.
-                </span>
+                <span className="p-[10px]">Watch Now</span>
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
                     <iframe
@@ -125,17 +122,32 @@ export default function Home() {
 
             <div className="content-info flex flex-col justify-center items-center w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center items-center">
-                <span className="">
-                  To watch the entire Death Valley Video purchase the extended
-                  video cut.
+                <span className="info-text">DEATH VALLEY DELUXE CONTENT</span>
+                <span className="sub-info-text">
+                  - Introduction by DJ MUGGS
                 </span>
-                <a
+                <span className="sub-info-text">
+                  - 14 Min behind scenes extras
+                </span>
+                <span className="sub-info-text">- Promotional Art Slide</span>
+                <span className="sub-info-text">
+                  - Two theatrical trailers for the film
+                </span>
+                <span className="sub-info-text-long">
+                  - 5 Music Videos (including never-before-seen versions of
+                  Coming For The Safe & Crazy Horse): Bold James - Coming for
+                  the Safe (Original Version) Meyhem Lauren - Ready for War Roc
+                  Marciano - Crazy Horse (Original Version) Rome Streetz -
+                  Skeleton Bones Jay Worthy - (Check in) (OG Version)
+                </span>
+                {/* <span className="info-text"></span> */}
+                {/* <a
                   className="button"
                   href="https://vimeo.com/store/ondemand/popup/6617208?referrer=https%3A%2F%2Fvimeo.com%2F&ssl=1"
                   target="_blank"
                 >
                   Purchase
-                </a>
+                </a> */}
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
                     <iframe
