@@ -194,14 +194,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bottom-info w-[100vw]">
+          {/* <div className="bottom-info w-[100vw]">
             <small>
               © 2024,{" "}
               <Link className="home-link" href="https://soulassassins.com/">
                 Soul Assassins
               </Link>
             </small>
-          </div>
+          </div> */}
         </div>
       </SwiperSlide>
     </Swiper>
