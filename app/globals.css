@@ -78,12 +78,13 @@ small {
 }
 
 .info-text {
-  font-size: 14px;
+  font-size: 20px;
   font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 700;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  color: #c18f3b;
 }
 
 .sub-info-text {
@@ -165,6 +166,8 @@ small {
   .content-container {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
   .vid-container {
     padding: 0;
@@ -174,10 +177,11 @@ small {
 
   .content-info {
     padding: 0;
+    width: 100%;
   }
 
   .sub-info-text-long {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 

@@ -65,7 +65,11 @@ export default function Home() {
             </small>
             <small>
               © 2024,{" "}
-              <Link className="home-link" href="https://soulassassins.com/" style={{textDecoration: 'none !important'}}>
+              <Link
+                className="home-link"
+                href="https://soulassassins.com/"
+                style={{ textDecoration: "none !important" }}
+              >
                 Soul Assassins
               </Link>
             </small>
@@ -93,7 +97,7 @@ export default function Home() {
           </div>
 
           {/* <div className="info-text-container text-center"> */}
-            {/* <span className="info-text">
+          {/* <span className="info-text">
               A new powder has hit the streets of Oakland by way of India, and
               every gang in the region wants a taste. From acclaimed music
               producer DJ Muggs and Soul Assassins comes Death Valley. Directed
@@ -104,10 +108,15 @@ export default function Home() {
             </span> */}
           {/* </div> */}
 
-          <div className="content-container flex justify-center items-center w-[100vw]">
-            <div className="content-info flex flex-col justify-center items-center w-[50vw]">
+          <div className="content-container flex  w-[100vw]">
+            <div className="content-info flex flex-col  w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center">
-                <span className="p-[10px]">Watch Now</span>
+                <span
+                  className="p-[10px]"
+                  style={{ color: "red", fontSize: "20px" }}
+                >
+                  WATCH NOW
+                </span>
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
                     <iframe
@@ -123,7 +132,18 @@ export default function Home() {
 
             <div className="content-info flex flex-col justify-center items-center w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center items-center">
-                <span className="info-text">DEATH VALLEY DELUXE CONTENT</span>
+              <span className="info-text">DEATH VALLEY DELUXE CONTENT</span>
+                <div className="flex justify-center items-center">
+                  <div className="vid-container w-[50vw]">
+                    <iframe
+                      className="w-[100%] h-[100%]"
+                      src="https://player.vimeo.com/video/876150152?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      title="DEATH VALLEY DELUXE"
+                    ></iframe>
+                  </div>
+                </div>
+                {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <span className="sub-info-text">
                   - Introduction by DJ MUGGS
                 </span>
@@ -135,13 +155,12 @@ export default function Home() {
                   - Two theatrical trailers for the film
                 </span>
                 <span className="sub-info-text-long">
-                  - 5 Music Videos (including never-before-seen versions of
-                  Coming For The Safe & Crazy Horse): Bold James - Coming for
-                  the Safe (Original Version) Meyhem Lauren - Ready for War Roc
-                  Marciano - Crazy Horse (Original Version) Rome Streetz -
-                  Skeleton Bones Jay Worthy - (Check in) (OG Version)
+                  - 5 Music Videos: Boldy James - Coming for the Safe (Directors
+                  Cut) Meyhem Lauren - Ready for War Roc Marciano - Crazy Horse
+                  (Directors Cut) Rome Streetz - Skeleton Bones Jay Worthy -
+                  Check in (OG Version)
                 </span>
-                
+
                 {/* <span className="info-text"></span> */}
                 {/* <a
                   className="button"
@@ -150,7 +169,7 @@ export default function Home() {
                 >
                   Purchase
                 </a> */}
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
                     <iframe
                       className="w-[100%] h-[100%]"
@@ -159,23 +178,30 @@ export default function Home() {
                       title="DEATH VALLEY"
                     ></iframe>
                   </div>
-                </div>
+                </div> */}
                 <span className="sub-info-text">
-                  Log into your  <Link className="home-link" target="_blank" rel="noreferrer" href="https://vimeo.com/">
-               Vimeo
-              </Link> account to view the Deluxe Content
+                  Log into your{" "}
+                  <Link
+                    className="home-link"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://vimeo.com/"
+                  >
+                    Vimeo
+                  </Link>{" "}
+                  account to view the Deluxe Content
                 </span>
               </div>
             </div>
           </div>
-          {/* <div className="bottom-info w-[100vw]">
+          <div className="bottom-info w-[100vw]">
             <small>
               © 2024,{" "}
               <Link className="home-link" href="https://soulassassins.com/">
                 Soul Assassins
               </Link>
             </small>
-          </div> */}
+          </div>
         </div>
       </SwiperSlide>
     </Swiper>
