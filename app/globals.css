@@ -50,6 +50,38 @@ small {
   text-align: center;
 }
 
+.hero-image {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("/sabg2.jpg");
+  filter: brightness(40%);
+  /* PARALLAX SCROLLING */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero-image-mobile {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("/hero.jpg");
+  filter: brightness(40%);
+  /* PARALLAX SCROLLING */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .bottom-info {
   display: flex;
   flex-direction: column;
@@ -87,6 +119,13 @@ small {
   color: #c18f3b;
 }
 
+.sub-info-container {
+  width: 500px;
+  padding: 15px;
+  gap: 10px;
+
+}
+
 .sub-info-text {
   font-size: 11px;
   font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
@@ -98,8 +137,8 @@ small {
   font-size: 11px;
   font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 700;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
 }
 
 .home-link {
@@ -191,5 +230,9 @@ small {
   }
   .vid-container {
     width: 100vw;
+  }
+
+  .sub-info-container {
+    width: 250px;
   }
 }
