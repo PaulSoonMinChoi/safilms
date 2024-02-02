@@ -41,8 +41,8 @@ export default function Home() {
       // className="swiper-container"
       className="w-[100vw] h-[100vh]"
       slidesPerView={1}
-      // navigation
-      mousewheel={true}
+      navigation
+      // mousewheel={true}
       pagination={{ type: "bullets", clickable: true }}
       modules={[Navigation, Pagination, Mousewheel]}
       loop={true}
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[100vw] h-[100vh]">
+        <div className="w-[100vw] h-[100vh] overflow-auto">
           <div className="background-image"></div>
 
           <div className="flex justify-center items-center w-[100vw] pt-6">
@@ -148,7 +148,7 @@ export default function Home() {
             <div className="content-info flex flex-col  w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center">
                 <span
-                  className="p-[10px]"
+                  className="m-[30px]"
                   style={{ color: "red", fontSize: "20px" }}
                 >
                   WATCH NOW
