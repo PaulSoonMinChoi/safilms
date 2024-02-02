@@ -115,6 +115,63 @@ export default function Home() {
           </div> */}
         </div>
       </SwiperSlide>
+
+      {/* SECOND HOME PAGE */}
+      <SwiperSlide>
+        <div className="w-[100vw] h-[100vh]">
+          <video
+            className="video-test"
+            loop
+            muted
+            autoPlay
+            playsInline
+            controls={undefined}
+          >
+            <source src="/vid/vid2.mp4" type="video/mp4" />
+          </video>
+          {/* {!showMobileBG ? (
+            <div className="hero-image" />
+          ) : (
+            <div className="hero-image-mobile" />
+          )} */}
+          {/* <div className="hero-image" /> */}
+
+          <div className="flex justify-center items-center w-[100vw] pt-6">
+            <Link href="/">
+              <Image
+                className="logo"
+                // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
+                src={"/salogo.png"}
+                alt="SA logo"
+                width={80}
+                height={80}
+              />
+            </Link>
+          </div>
+
+          {/* <div className="flex justify-center items-center text-center w-[100vw] p-[100px]">
+            <span>SA Films is a production of films by Soul Assassins</span>
+          </div> */}
+
+          <div className="bottom-info w-[100vw]">
+            <small>
+              <Link className="home-link" href="/contact">
+                Contact
+              </Link>
+            </small>
+            <small>
+              © 2024,{" "}
+              <Link
+                className="home-link"
+                href="https://soulassassins.com/"
+                style={{ textDecoration: "none !important" }}
+              >
+                Soul Assassins
+              </Link>
+            </small>
+          </div>
+        </div>
+      </SwiperSlide>
       <SwiperSlide>
         <div className="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll">
           <div className="background-image"></div>
@@ -153,8 +210,7 @@ export default function Home() {
                   height={400}
                 />
                 <span
-                  className="mt-[20px] mb-[10px]"
-                  style={{ color: "#fff", fontSize: "20px", opacity: '0.8' }}
+                  style={{ color: "#fff", fontSize: "20px", opacity: "0.8" }}
                 >
                   WATCH NOW
                 </span>
@@ -176,7 +232,7 @@ export default function Home() {
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <Image
                   // className="logo"
-                  className="m-[30px] p-3"
+                  className="mt-[30px] p-3"
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                   src={"/dvdeluxe.png"}
                   alt="SA logo"
