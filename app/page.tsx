@@ -148,7 +148,7 @@ export default function Home() {
             <div className="content-info flex flex-col  w-[50vw]">
               <div className="flex justify-center flex-col gap-[10px] text-center">
                 <span
-                  className="mt-[20px]"
+                  className="mt-[20px] mb-[10px]"
                   style={{ color: "red", fontSize: "20px" }}
                 >
                   WATCH NOW
