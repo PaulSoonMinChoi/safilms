@@ -132,21 +132,26 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex justify-center items-center w-[100vw]">
-            {/* <h1> DEATH VALLEY </h1> */}
+          {/* <div className="flex justify-center items-center w-[100vw]">
             <Image
               className="mt-[30px]"
-              // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
               src={"/deathvalleylogo.png"}
               alt="SA logo"
               width={400}
               height={400}
             />
-          </div>
+          </div> */}
 
           <div className="content-container flex  w-[100vw]">
             <div className="content-info flex flex-col  w-[50vw]">
-              <div className="flex justify-center flex-col gap-[10px] text-center">
+              <div className="flex justify-center flex-col gap-[10px] text-center items-center">
+                <Image
+                  className="mt-[30px] p-3"
+                  src={"/deathvalleylogo.png"}
+                  alt="SA logo"
+                  width={400}
+                  height={400}
+                />
                 <span
                   className="mt-[20px] mb-[10px]"
                   style={{ color: "red", fontSize: "20px" }}
@@ -171,12 +176,12 @@ export default function Home() {
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <Image
                   // className="logo"
-                  className="m-[30px]"
+                  className="m-[30px] p-3"
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                   src={"/dvdeluxe.png"}
                   alt="SA logo"
-                  width={250}
-                  height={250}
+                  width={400}
+                  height={400}
                 />
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
