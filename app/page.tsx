@@ -15,9 +15,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered, faX } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const [showMobileBG, setShowMobileBG] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleSideMenuClose = () => {
+    setShowMenu(false);
+  };
 
   useEffect(() => {
     // Add event listener to update screen width
@@ -49,42 +56,44 @@ export default function Home() {
       speed={800}
     >
       <SwiperSlide>
-        <div className="w-[100vw] h-[100vh]">
-          {/* <video
-            className="video-test"
-            loop
-            muted
-            autoPlay
-            playsInline
-            controls={undefined}
-          >
-            <source src="/vid/deathvalleytrailer.mp4" type="video/mp4" />
-          </video> */}
+        <div className="w-[100vw] h-[100vh] relative">
           {!showMobileBG ? (
             <div className="hero-image" />
           ) : (
             <div className="hero-image-mobile" />
           )}
-          {/* <div className="hero-image" /> */}
 
-          <div className="flex justify-center items-center w-[100vw] pt-6">
-            <Link href="/">
-              <Image
-                className="logo"
-                // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
-                src={"/salogo.png"}
-                alt="SA logo"
-                width={80}
-                height={80}
-              />
-            </Link>
-          </div>
+          <FontAwesomeIcon
+            className={"menu-icon"}
+            icon={faBarsStaggered}
+            onClick={() => setShowMenu(true)}
+          />
 
-          {/* <div className="flex justify-center items-center text-center w-[100vw] p-[100px]">
-            <span>SA Films is a production of films by Soul Assassins</span>
-          </div> */}
+          {showMenu && (
+            <div className="side-navigation-container">
+              <div>
+                <FontAwesomeIcon
+                  className="menu-icon"
+                  icon={faX}
+                  onClick={() => handleSideMenuClose()}
+                />
+              </div>
+              <div className="side-navigation">
+                <Link className="home-link" href="/contact">
+                  Contact
+                </Link>
+                <Link
+                  className="home-link"
+                  href="https://soulassassins.com/"
+                  style={{ textDecoration: "none !important" }}
+                >
+                  Soul Assassins
+                </Link>
+              </div>
+            </div>
+          )}
 
-          <div className="bottom-info w-[100vw]">
+          {/* <div className="bottom-info w-[100vw]">
             <small>
               <Link className="home-link" href="/contact">
                 Contact
@@ -100,19 +109,8 @@ export default function Home() {
                 Soul Assassins
               </Link>
             </small>
-          </div>
-
-          {/* <div className="flex justify-center items-center w-[50vw] h-[100vh]">
-            <div className="w-[40vw] h-[100vh]">
-              <iframe
-                className="w-[100%] h-[100%]"
-                src="https://player.vimeo.com/video/903023455?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                // frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="DEATH VALLEY"
-              ></iframe>
-            </div>
           </div> */}
+
         </div>
       </SwiperSlide>
 
@@ -129,12 +127,36 @@ export default function Home() {
           >
             <source src="/vid/vid2.mp4" type="video/mp4" />
           </video>
-          {/* {!showMobileBG ? (
-            <div className="hero-image" />
-          ) : (
-            <div className="hero-image-mobile" />
-          )} */}
-          {/* <div className="hero-image" /> */}
+
+          <FontAwesomeIcon
+            className={"menu-icon"}
+            icon={faBarsStaggered}
+            onClick={() => setShowMenu(true)}
+          />
+
+          {showMenu && (
+            <div className="side-navigation-container">
+              <div>
+                <FontAwesomeIcon
+                  className="menu-icon"
+                  icon={faX}
+                  onClick={() => handleSideMenuClose()}
+                />
+              </div>
+              <div className="side-navigation">
+                <Link className="home-link" href="/contact">
+                  Contact
+                </Link>
+                <Link
+                  className="home-link"
+                  href="https://soulassassins.com/"
+                  style={{ textDecoration: "none !important" }}
+                >
+                  Soul Assassins
+                </Link>
+              </div>
+            </div>
+          )}
 
           <div className="flex justify-center items-center w-[100vw] pt-6">
             <Link href="/">
@@ -143,17 +165,13 @@ export default function Home() {
                 // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                 src={"/salogo.png"}
                 alt="SA logo"
-                width={80}
-                height={80}
+                width={65}
+                height={65}
               />
             </Link>
           </div>
 
-          {/* <div className="flex justify-center items-center text-center w-[100vw] p-[100px]">
-            <span>SA Films is a production of films by Soul Assassins</span>
-          </div> */}
-
-          <div className="bottom-info w-[100vw]">
+          {/* <div className="bottom-info w-[100vw]">
             <small>
               <Link className="home-link" href="/contact">
                 Contact
@@ -169,12 +187,41 @@ export default function Home() {
                 Soul Assassins
               </Link>
             </small>
-          </div>
+          </div> */}
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll">
-          <div className="background-image"></div>
+  
+        <FontAwesomeIcon
+            className={"menu-icon"}
+            icon={faBarsStaggered}
+            onClick={() => setShowMenu(true)}
+          />
+
+          {showMenu && (
+            <div className="side-navigation-container">
+              <div>
+                <FontAwesomeIcon
+                  className="menu-icon"
+                  icon={faX}
+                  onClick={() => handleSideMenuClose()}
+                />
+              </div>
+              <div className="side-navigation">
+                <Link className="home-link" href="/contact">
+                  Contact
+                </Link>
+                <Link
+                  className="home-link"
+                  href="https://soulassassins.com/"
+                  style={{ textDecoration: "none !important" }}
+                >
+                  Soul Assassins
+                </Link>
+              </div>
+            </div>
+          )}
 
           <div className="flex justify-center items-center w-[100vw] pt-6">
             <Link href="/">
@@ -183,34 +230,29 @@ export default function Home() {
                 // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                 src={"/salogo.png"}
                 alt="SA logo"
-                width={80}
-                height={80}
+                width={65}
+                height={65}
               />
             </Link>
           </div>
 
-          {/* <div className="flex justify-center items-center w-[100vw]">
-            <Image
-              className="mt-[30px]"
-              src={"/deathvalleylogo.png"}
-              alt="SA logo"
-              width={400}
-              height={400}
-            />
-          </div> */}
-
           <div className="content-container flex  w-[100vw]">
             <div className="content-info flex flex-col  w-[50vw]">
-              <div className="flex justify-center flex-col gap-[10px] text-center items-center">
+              <div className="flex justify-center flex-col gap-[5px] text-center items-center">
                 <Image
-                  className="mt-[30px] p-3"
+                  className="logo-text mt-[30px] p-3"
                   src={"/deathvalleylogo.png"}
                   alt="SA logo"
                   width={400}
                   height={400}
                 />
                 <span
-                  style={{ color: "#fff", fontSize: "20px", opacity: "0.8" }}
+                  style={{
+                    color: "#fff",
+                    fontSize: "14px",
+                    opacity: "0.8",
+                    paddingBottom: "5px",
+                  }}
                 >
                   WATCH NOW
                 </span>
@@ -227,12 +269,14 @@ export default function Home() {
               </div>
             </div>
 
+            {showMobileBG ? <div className="divider" /> : null}
+
             <div className="content-info flex flex-col justify-center items-center w-[50vw]">
-              <div className="flex justify-center flex-col gap-[10px] text-center items-center">
+              <div className="flex justify-center flex-col gap-[5px] text-center items-center">
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <Image
                   // className="logo"
-                  className="mt-[30px] p-3"
+                  className="logo-text p-3"
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                   src={"/dvdeluxe.png"}
                   alt="SA logo"
