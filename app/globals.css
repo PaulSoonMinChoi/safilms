@@ -92,7 +92,7 @@ small {
   object-fit: cover;
   -o-object-fit: cover;
   position: fixed;
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
   pointer-events: none;
   z-index: -1;
 }

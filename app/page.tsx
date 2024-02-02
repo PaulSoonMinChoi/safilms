@@ -62,6 +62,18 @@ export default function Home() {
           ) : (
             <div className="hero-image-mobile" />
           )}
+          {/* <div className="flex justify-center items-center w-[100vw] pt-6">
+            <Link href="/">
+              <Image
+                className="logo"
+                // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
+                src={"/salogo.png"}
+                alt="SA logo"
+                width={65}
+                height={65}
+              />
+            </Link>
+          </div> */}
 
           <FontAwesomeIcon
             className={"menu-icon"}
