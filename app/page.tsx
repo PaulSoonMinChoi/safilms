@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[100vw] h-[100vh] overflow-auto">
+        <div className="w-[100vw] h-[100vh] overflow-scroll">
           <div className="background-image"></div>
 
           <div className="flex justify-center items-center w-[100vw] pt-6">
@@ -139,8 +139,8 @@ export default function Home() {
               // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
               src={"/deathvalleylogo.png"}
               alt="SA logo"
-              width={250}
-              height={250}
+              width={400}
+              height={400}
             />
           </div>
 
