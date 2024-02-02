@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[100vw] h-[100vh] overflow-scroll">
+        <div className="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll">
           <div className="background-image"></div>
 
           <div className="flex justify-center items-center w-[100vw] pt-6">
