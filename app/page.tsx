@@ -154,7 +154,7 @@ export default function Home() {
                 />
                 <span
                   className="mt-[20px] mb-[10px]"
-                  style={{ color: "red", fontSize: "20px" }}
+                  style={{ color: "#fff", fontSize: "20px", opacity: '0.8' }}
                 >
                   WATCH NOW
                 </span>
