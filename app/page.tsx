@@ -223,8 +223,8 @@ export default function Home() {
                   className="logo-text mt-[30px] p-3"
                   src={"/deathvalleylogo.png"}
                   alt="SA logo"
-                  width={550}
-                  height={550}
+                  width={650}
+                  height={650}
                 />
                 <span
                   style={{
@@ -260,8 +260,8 @@ export default function Home() {
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                   src={"/dvdeluxe.png"}
                   alt="SA logo"
-                  width={550}
-                  height={550}
+                  width={650}
+                  height={650}
                 />
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">

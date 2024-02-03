@@ -127,7 +127,7 @@ small {
 }
 
 .sub-info-container {
-  width: 750px;
+  width: 670px;
   padding: 15px;
   gap: 10px;
 }
@@ -165,7 +165,15 @@ small {
   width: 50vw;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
+}
+
+.vid-container2 {
+  height: 40vh;
+  width: 50vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
 }
 
 .content-info {
@@ -303,6 +311,7 @@ small {
     padding: 1rem;
   }
   .vid-container {
+    margin-bottom: 15px;
     width: 100vw;
   }
 
