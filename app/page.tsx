@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 // core version + navigation, pagination modules:
+import SwiperCore from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -14,13 +15,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faX } from "@fortawesome/free-solid-svg-icons";
+
+SwiperCore.use([Navigation]);
 
 export default function Home() {
   const [showMobileBG, setShowMobileBG] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+
+  const swiperRef = useRef<SwiperCore | null>(null);
+
+  const handleNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext?.();
+    }
+  };
 
   const handleSideMenuClose = () => {
     setShowMenu(false);
@@ -45,35 +56,24 @@ export default function Home() {
 
   return (
     <Swiper
-      // className="swiper-container"
       className="w-[100vw] h-[100vh]"
       slidesPerView={1}
-      navigation
+      // navigation
       // mousewheel={true}
       pagination={{ type: "bullets", clickable: true }}
       modules={[Navigation, Pagination, Mousewheel]}
       loop={true}
       speed={800}
-    >
-      <SwiperSlide>
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper;
+      }}>
+      {/* <SwiperSlide>
         <div className="w-[100vw] h-[100vh] relative">
           {!showMobileBG ? (
             <div className="hero-image" />
           ) : (
             <div className="hero-image-mobile" />
           )}
-          {/* <div className="flex justify-center items-center w-[100vw] pt-6">
-            <Link href="/">
-              <Image
-                className="logo"
-                // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
-                src={"/salogo.png"}
-                alt="SA logo"
-                width={65}
-                height={65}
-              />
-            </Link>
-          </div> */}
 
           <FontAwesomeIcon
             className={"menu-icon"}
@@ -97,34 +97,14 @@ export default function Home() {
                 <Link
                   className="home-link"
                   href="https://soulassassins.com/"
-                  style={{ textDecoration: "none !important" }}
-                >
+                  style={{ textDecoration: "none !important" }}>
                   Soul Assassins
                 </Link>
               </div>
             </div>
           )}
-
-          {/* <div className="bottom-info w-[100vw]">
-            <small>
-              <Link className="home-link" href="/contact">
-                Contact
-              </Link>
-            </small>
-            <small>
-              © 2024,{" "}
-              <Link
-                className="home-link"
-                href="https://soulassassins.com/"
-                style={{ textDecoration: "none !important" }}
-              >
-                Soul Assassins
-              </Link>
-            </small>
-          </div> */}
-
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
 
       {/* SECOND HOME PAGE */}
       <SwiperSlide>
@@ -135,8 +115,7 @@ export default function Home() {
             muted
             autoPlay
             playsInline
-            controls={undefined}
-          >
+            controls={undefined}>
             <source src="/vid/vid2.mp4" type="video/mp4" />
           </video>
 
@@ -162,9 +141,11 @@ export default function Home() {
                 <Link
                   className="home-link"
                   href="https://soulassassins.com/"
-                  style={{ textDecoration: "none !important" }}
-                >
+                  style={{ textDecoration: "none !important" }}>
                   Soul Assassins
+                </Link>
+                <Link className="home-link" href="/faq">
+                  FAQ
                 </Link>
               </div>
             </div>
@@ -183,29 +164,14 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* <div className="bottom-info w-[100vw]">
-            <small>
-              <Link className="home-link" href="/contact">
-                Contact
-              </Link>
-            </small>
-            <small>
-              © 2024,{" "}
-              <Link
-                className="home-link"
-                href="https://soulassassins.com/"
-                style={{ textDecoration: "none !important" }}
-              >
-                Soul Assassins
-              </Link>
-            </small>
-          </div> */}
+          <span className="enter-text" onClick={handleNextSlide}>
+            ENTER
+          </span>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll">
-  
-        <FontAwesomeIcon
+          <FontAwesomeIcon
             className={"menu-icon"}
             icon={faBarsStaggered}
             onClick={() => setShowMenu(true)}
@@ -227,9 +193,11 @@ export default function Home() {
                 <Link
                   className="home-link"
                   href="https://soulassassins.com/"
-                  style={{ textDecoration: "none !important" }}
-                >
+                  style={{ textDecoration: "none !important" }}>
                   Soul Assassins
+                </Link>
+                <Link className="home-link" href="/faq">
+                  FAQ
                 </Link>
               </div>
             </div>
@@ -264,8 +232,7 @@ export default function Home() {
                     fontSize: "14px",
                     opacity: "0.8",
                     paddingBottom: "5px",
-                  }}
-                >
+                  }}>
                   WATCH NOW
                 </span>
                 <div className="flex justify-center items-center">
@@ -274,14 +241,15 @@ export default function Home() {
                       className="w-[100%] h-[100%]"
                       src="https://player.vimeo.com/video/903023455?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                       allow="autoplay; fullscreen; picture-in-picture"
-                      title="DEATH VALLEY"
-                    ></iframe>
+                      title="DEATH VALLEY"></iframe>
                   </div>
                 </div>
               </div>
             </div>
 
-            {showMobileBG ? <div className="divider" /> : null}
+            <div className="divider" />
+
+            {/* {showMobileBG ? <div className="divider" /> : null} */}
 
             <div className="content-info flex flex-col justify-center items-center w-[50vw]">
               <div className="flex justify-center flex-col gap-[5px] text-center items-center">
@@ -301,11 +269,16 @@ export default function Home() {
                       className="w-[100%] h-[100%]"
                       src="https://player.vimeo.com/video/876150152?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                       allow="autoplay; fullscreen; picture-in-picture"
-                      title="DEATH VALLEY DELUXE"
-                    ></iframe>
+                      title="DEATH VALLEY DELUXE"></iframe>
                   </div>
                 </div>
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
+                <a
+                  className="button"
+                  href="https://vimeo.com/ondemand/sadeathvalley"
+                  target="_blank">
+                  Watch for 4.99
+                </a>
                 <div className="sub-info-container flex flex-col justify-center text-left">
                   <span className="sub-info-text">
                     - Introduction by DJ MUGGS
@@ -329,20 +302,12 @@ export default function Home() {
                       className="home-link"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://vimeo.com/"
-                    >
+                      href="https://vimeo.com/">
                       Vimeo
                     </Link>{" "}
                     account to view the Deluxe Content
                   </span>
                 </div>
-                {/* <a
-                  className="button"
-                  href="https://vimeo.com/store/ondemand/popup/6617208?referrer=https%3A%2F%2Fvimeo.com%2F&ssl=1"
-                  target="_blank"
-                >
-                  Purchase
-                </a> */}
               </div>
             </div>
           </div>

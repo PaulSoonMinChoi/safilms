@@ -49,7 +49,12 @@ small {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-image: radial-gradient(circle, rgba(0,0,0,0) 10%,  rgba(0,0,0,1)), url("/sabg2.jpg");
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1)
+    ),
+    url("/sabg2.jpg");
   /* PARALLAX SCROLLING */
   background-attachment: fixed;
   background-position: center;
@@ -64,7 +69,12 @@ small {
   height: 100vh;
   width: 100%;
 
-  background-image: radial-gradient(circle, rgba(0,0,0,0) 10%,  rgba(0,0,0,1)), url("/hero.jpg");
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1)
+    ),
+    url("/hero.jpg");
   /* PARALLAX SCROLLING */
   background-attachment: fixed;
   background-position: center;
@@ -115,7 +125,6 @@ small {
   width: 750px;
   padding: 15px;
   gap: 10px;
-
 }
 
 .sub-info-text {
@@ -123,17 +132,18 @@ small {
   font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 700;
   padding: 2px;
+  color: #fff;
 }
 
 .sub-info-text-long {
   font-size: 11px;
   font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 700;
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
+  color: #fff;
 }
 
 .home-link {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -146,7 +156,8 @@ small {
 }
 
 .vid-container {
-  height: 30vw;
+  /* height: 30vw; */
+  height: 20vw;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -162,13 +173,12 @@ small {
 .button {
   border: 1px solid #fff;
   padding: 10px;
-  border-radius: 10%;
   transition: opacity 0.4s ease;
-  width: 100px;
+  width: 150px;
 }
 
 .button:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .background-image {
@@ -222,11 +232,34 @@ small {
   gap: 10px;
 }
 
+.enter-text {
+  color: #fff;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  left: 50%;
+  bottom: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.enter-text:hover {
+  opacity: 0.7;
+}
+
+.content-container {
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1700px) {
   .sub-info-container {
     width: 500px;
-  
   }
 }
 
@@ -237,12 +270,12 @@ small {
 }
 
 @media screen and (max-width: 1000px) {
-  .content-container {
+  /* .content-container {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .vid-container {
     padding: 0;
     width: 100vw;
@@ -272,13 +305,9 @@ small {
   }
 }
 
-
 @media screen and (max-width: 550px) {
   .logo-text {
     width: 300px;
     /* height: 300px; */
   }
 }
-
-
-
