@@ -84,6 +84,10 @@ small {
   z-index: -1;
 }
 
+.nav-info-text {
+  color: #fff;
+}
+
 .bottom-info {
   display: flex;
   flex-direction: column;
@@ -94,6 +98,7 @@ small {
   left: 50%;
   bottom: 5%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .video-test {
@@ -156,8 +161,8 @@ small {
 }
 
 .vid-container {
-  /* height: 30vw; */
-  height: 20vw;
+  height: 40vh;
+  width: 50vw;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -175,6 +180,7 @@ small {
   padding: 10px;
   transition: opacity 0.4s ease;
   width: 150px;
+  color: #fff;
 }
 
 .button:hover {
@@ -265,7 +271,7 @@ small {
 
 @media screen and (max-width: 1500px) {
   .vid-container {
-    padding: 50px;
+    /* padding: 50px; */
   }
 }
 
@@ -302,6 +308,13 @@ small {
 
   .sub-info-container {
     width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-text {
+    width: 320px !important;
+    /* height: 450px !important; */
   }
 }
 

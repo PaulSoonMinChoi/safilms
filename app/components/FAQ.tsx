@@ -18,7 +18,7 @@ const FAQ = () => {
         </Link>
       </div>
 
-      <div className="flex justify-center items-center text-center flex-col gap-[50px] h-[80vh] p-[10px]">
+      <div className="nav-info-text flex justify-center items-center text-center flex-col gap-[50px] h-[80vh] p-[10px]">
         <h1>FAQ</h1>
         <span>How to purchase Death Valley Deluxe?</span>
         {/* <span>

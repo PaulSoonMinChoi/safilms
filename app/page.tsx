@@ -218,13 +218,13 @@ export default function Home() {
 
           <div className="content-container flex  w-[100vw]">
             <div className="content-info flex flex-col  w-[50vw]">
-              <div className="flex justify-center flex-col gap-[5px] text-center items-center">
+              <div className=" flex justify-center flex-col gap-[5px] text-center items-center">
                 <Image
                   className="logo-text mt-[30px] p-3"
                   src={"/deathvalleylogo.png"}
                   alt="SA logo"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={500}
                 />
                 <span
                   style={{
@@ -260,8 +260,8 @@ export default function Home() {
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
                   src={"/dvdeluxe.png"}
                   alt="SA logo"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={500}
                 />
                 <div className="flex justify-center items-center">
                   <div className="vid-container w-[50vw]">
@@ -274,7 +274,7 @@ export default function Home() {
                 </div>
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <a
-                  className="button"
+                  className="button mt-[10px]"
                   href="https://vimeo.com/ondemand/sadeathvalley"
                   target="_blank">
                   Watch for 4.99
