@@ -274,7 +274,7 @@ export default function Home() {
                 </div>
                 {/* <span className="info-text">DEATH VALLEY DELUXE CONTENT</span> */}
                 <a
-                  className="button mt-[10px]"
+                  className="button"
                   href="https://vimeo.com/ondemand/sadeathvalley"
                   target="_blank">
                   Watch for 4.99
