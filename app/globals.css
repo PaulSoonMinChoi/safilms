@@ -128,7 +128,7 @@ small {
 
 .sub-info-container {
   width: 670px;
-  padding: 15px;
+  padding: 17px;
   gap: 10px;
 }
 
@@ -253,11 +253,13 @@ small {
   gap: 10px;
   left: 50%;
   bottom: 15%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   transform: translate(-50%, -50%);
   cursor: pointer;
   transition: opacity 0.4s ease;
+  border: 2px solid #fff;
+  padding: 10px;
 }
 
 .enter-text:hover {
