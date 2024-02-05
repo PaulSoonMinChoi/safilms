@@ -302,7 +302,7 @@ export default function Home() {
                       className="home-link"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://vimeo.com/">
+                      href="https://vimeo.com/ondemand/sadeathvalley">
                       Vimeo
                     </Link>{" "}
                     account to view the Deluxe Content
