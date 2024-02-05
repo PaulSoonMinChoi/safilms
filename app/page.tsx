@@ -144,9 +144,9 @@ export default function Home() {
                   style={{ textDecoration: "none !important" }}>
                   Soul Assassins
                 </Link>
-                <Link className="home-link" href="/faq">
+                {/* <Link className="home-link" href="/faq">
                   FAQ
-                </Link>
+                </Link> */}
               </div>
             </div>
           )}
@@ -196,9 +196,9 @@ export default function Home() {
                   style={{ textDecoration: "none !important" }}>
                   Soul Assassins
                 </Link>
-                <Link className="home-link" href="/faq">
+                {/* <Link className="home-link" href="/faq">
                   FAQ
-                </Link>
+                </Link> */}
               </div>
             </div>
           )}
@@ -277,7 +277,7 @@ export default function Home() {
                   className="button"
                   href="https://vimeo.com/ondemand/sadeathvalley"
                   target="_blank">
-                  Watch for 4.99
+                  PURCHASE NOW
                 </a>
                 <div className="sub-info-container flex flex-col justify-center text-left">
                   <span className="sub-info-text">
