@@ -258,7 +258,7 @@ export default function Home() {
                   // className="logo"
                   className="logo-text p-3"
                   // src={`${main ? "/icons/ov.svg" : "/icons/ovblack.svg"}`}
-                  src={"/dvdeluxe.png"}
+                  src={"/deluxeedition.png"}
                   alt="SA logo"
                   width={650}
                   height={650}
