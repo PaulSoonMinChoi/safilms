@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -72,7 +72,7 @@ const Contact = () => {
           </Link>
         </span>
       </div>
-
+      {/* 
       <div className="bottom-info w-[100vw]">
         <small>
           © 2024,{" "}
@@ -84,7 +84,7 @@ const Contact = () => {
             Soul Assassins
           </Link>
         </small>
-      </div>
+      </div> */}
     </div>
   );
 };
